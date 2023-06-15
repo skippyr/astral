@@ -6,7 +6,6 @@ A custom dual-line ZSH theme that shows:
 * directory
 * source virtual environments
 * git branch
-* exit code of failed commands
 
 Here's a preview for you to check out:
 
