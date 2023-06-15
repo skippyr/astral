@@ -15,4 +15,4 @@ function _branch() {
 precmd() { echo }
 
 PROMPT='%B%F{yellow}%n%F{red}@%F{green}%m%b%f$(_venv) in %B%F{red}%~%f%b%b$(_branch)
-%(?..%F{red}%? )%F{green}%F{yellow}%F{red}%f '
+%(?..%F{red}%?  )%F{green}%F{yellow}%F{red}%f '
