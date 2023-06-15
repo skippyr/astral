@@ -3,8 +3,8 @@
 A custom dual-line ZSH theme that shows:
 * user
 * hostname
-* directory
-* source virtual environments
+* current directory
+* source virtual environment
 * git branch
 
 Here's a preview for you to check out:
