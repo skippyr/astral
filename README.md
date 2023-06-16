@@ -5,7 +5,8 @@ A custom dual-line ZSH theme that shows:
 * hostname
 * current directory
 * source virtual environment
-* git branch
+* current git branch
+* if there are changes in a git branch
 
 Here's a preview for you to check out:
 
