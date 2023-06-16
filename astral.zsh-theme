@@ -17,7 +17,5 @@ function _changes() {
 	[[ -n ${changes} ]] && echo " [%F{red}✗%f]"
 }
 
-precmd() { echo }
-
 PROMPT='%F{green}%F{yellow}%F{red} %B%F{yellow}%n%F{red}@%F{green}%m%b%f$(_venv) in %B%F{red} %1~%f%b%b$(_branch)$(_changes)
   %F{red}¦%f '
