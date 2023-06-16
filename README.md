@@ -20,16 +20,16 @@ Colors may be different in your setup as it depends of your terminal emulator's 
 * Clone this repository.
 
 ```bash
-git clone --depth=1 https://github.com/skippyr/astral ~/.local/share/zsh/themes
+git clone --depth=1 https://github.com/skippyr/astral ~/.local/share/zsh/themes/astral
 ```
 
 * Add a source rule in your `~/.zshrc` file to include the theme:
 
 ```bash
-source ~/.local/share/zsh/themes/astral.zsh-theme
+source ~/.local/share/zsh/themes/astral/astral.zsh-theme
 ```
 
-* Restart your ZSH session.
+* Reopen ZSH.
 
 ## Issues
 
