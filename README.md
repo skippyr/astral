@@ -1,5 +1,7 @@
 # Astral
 
+## Starting Point
+
 The Astral project is minimal and colorful ZSH-theme.
 
 Right below, there is a preview that you check out.
