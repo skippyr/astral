@@ -10,7 +10,7 @@ This theme can be setup with a series of terminal emulators, themes and wallpape
 
 > In this preview, the Astral theme was used within the [Kitty terminal emulator](https://github.com/kovidgoyal/kitty)
 with the [Rosé Pine theme](https://github.com/kovidgoyal/kitty-themes/blob/master/themes/rose-pine.conf).
-Font used is Source Code Pro Nerd Fonts. Wallpaper is [City buildings during night time by Zoe](https://unsplash.com/photos/BVoTTLwXvMQ) from Unsplash.
+Font used is Source Code Pro Nerd Font. Wallpaper is [City buildings during night time by Zoe](https://unsplash.com/photos/BVoTTLwXvMQ) from Unsplash.
 
 ## Features
 

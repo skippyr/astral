@@ -22,8 +22,9 @@ function _astral::print_git_changes {
   echo " [%F{red}✗%f]"
 }
 
-# If inside a Git repository, it prints name of the branch.
-function _astral::print_git_branch {
+# If inside a Git repository, it prints name of the branch and if there are
+# changes to be commited.
+function _astral::print_git_info {
   typeset -r branch=$(git branch --show-current 2>/dev/null)
   [[ -n ${branch} ]] &&
   echo " on %B%F{magenta}󰘬 ${branch}%b%f$(_astral::print_git_changes)"
@@ -40,5 +41,5 @@ function precmd {
   }
 }
 
-PROMPT='%F{green}%F{yellow}%F{red} %B%F{yellow}%n%F{red}@%F{green}%m%b%f$(_astral::print_venv) in %B%F{red} %1~%f%b%b$(_astral::print_git_branch)
+PROMPT='%F{green}%F{yellow}%F{red} %B%F{yellow}%n%F{red}@%F{green}%m%b%f$(_astral::print_venv) in %B%F{red} %1~%f%b%b$(_astral::print_git_info)
 %F{red}¦%f '
