@@ -2,16 +2,15 @@
 
 ## Starting Point
 
-The Astral project is a colorful dual-line prompt for the ZSH shell.
+The Astral project is a colorful dual-line theme for the ZSH shell.
 
 This theme can be setup with a series of terminal emulators, themes and wallpapers. You can use following preview as a source of inspiration and reference to see what it can look like:
 
 ![](./images/preview.png)
 
-> In this preview, the Astral was used within the [Kitty terminal emulator](https://github.com/kovidgoyal/kitty)
+> In this preview, the Astral theme was used within the [Kitty terminal emulator](https://github.com/kovidgoyal/kitty)
 with the [Rosé Pine theme](https://github.com/kovidgoyal/kitty-themes/blob/master/themes/rose-pine.conf).
-Font used is Source Code Pro Nerd Font with fallback to Nerd Fonts Symbols.
-Wallpaper is [City buildings during night time by Zoe](https://unsplash.com/photos/BVoTTLwXvMQ) from Unsplash.
+Font used is Source Code Pro Nerd Fonts. Wallpaper is [City buildings during night time by Zoe](https://unsplash.com/photos/BVoTTLwXvMQ) from Unsplash.
 
 ## Features
 
