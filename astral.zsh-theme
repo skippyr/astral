@@ -1,28 +1,34 @@
-# Enables prompt substitution.
+# Enables ZSH prompt substitution.
 #
-# This makes ZSH substitute variables and functions inside of the PROMPT
-# variables. For it to work, they must be defined using single quotes.
+# This make it substitute variables and functions in the prompt variables, but
+# they need to be defined using single quotes for it to work.
 setopt promptsubst
-# Disables the default changes made to the prompt when sourcing a virtual
+# Prevents the default changes made to the prompt when sourcing a virtual
 # environment.
 export VIRTUAL_ENV_DISABLE_PROMPT="1"
 
-# Prints the name of sourced virtual environments.
+# To avoid conflicts with possible user defined functions, all functions defined
+# in this theme use the "astral::" prefix.
+#
+# They might also use an underline character (_) at their start to make them
+# harder to find when using a regular tab completition.
+
+# If using a virtual environment, prints its base name.
 function _astral::print_venv {
   typeset -r venv=${VIRTUAL_ENV##*/}
   [[ -n ${venv} ]] &&
   echo " using %B%F{cyan} ${venv}%f%b"
 }
 
-# If inside a Git repository, it prints a decorator whenever there are changes
-# to be commited.
+# If inside a Git repository, prints a decorator if there are changes to be
+# commited.
 function _astral::print_git_changes {
   typeset -r changes=$(git status --porcelain 2>/dev/null)
   [[ -n ${changes} ]] &&
   echo " [%F{red}✗%f]"
 }
 
-# If inside a Git repository, it prints name of the branch and if there are
+# If inside a Git repository, prints the name of the branch and if there are
 # changes to be commited.
 function _astral::print_git_info {
   typeset -r branch=$(git branch --show-current 2>/dev/null)
@@ -30,11 +36,11 @@ function _astral::print_git_info {
   echo " on %B%F{magenta}󰘬 ${branch}%b%f$(_astral::print_git_changes)"
 }
 
-# The precmd function is a ZSH builtin function that gets executed every time
+# The "precmd" function is a ZSH builtin function that gets executed every time
 # before the prompt gets printed.
 #
-# This one is a workaround to make it print a new line character before the
-# prompt and make it more comfortable to use.
+# This setup is a work-around to make it print a new line after each command to
+# make the theme be more comfortable to use.
 function precmd {
   function precmd {
     echo
