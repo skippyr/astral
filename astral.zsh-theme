@@ -5,7 +5,7 @@ __Astral()
 {
 	Get_Virtual_Environment()
 	{
-		[[ -n ${VIRTUAL_ENV} ]] && echo " using %F{6} ${VIRTUAL_ENV##*/}%f"
+		[[ ${VIRTUAL_ENV} ]] && echo " using %F{6} ${VIRTUAL_ENV##*/}%f"
 	}
 
 	Get_Changes()
@@ -16,7 +16,7 @@ __Astral()
 	Get_Branch()
 	{
 		typeset -r b=$(git branch --show-current 2>/dev/null)
-		[[ -n $b ]] && echo " on %F{5}󰘬 $b%f$(Get_Changes)"
+		[[ ${b} ]] && echo " on %F{5}󰘬 ${b}%f$(Get_Changes)"
 	}
 
 	echo "%F{2}%F{3}%F{1} %F{3}%n%F{1}@%F{2}%m%f$(Get_Virtual_Environment)"\
@@ -25,3 +25,4 @@ __Astral()
 
 PROMPT='$(__Astral)
   %F{1}¦%f '
+
