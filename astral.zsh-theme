@@ -10,7 +10,7 @@ __Astral()
 
 	Get_Changes()
 	{
-		[[ $(git status --porcelain 2>/dev/null) ]] && echo " [%F{red}✗%f]"
+		[[ $(git status --porcelain 2>/dev/null) ]] && echo " [%F{1}✗%f]"
 	}
 
 	Get_Branch()
