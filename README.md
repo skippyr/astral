@@ -1,81 +1,80 @@
 # Astral
 
-## Starting Point
+## Description
 
-The Astral project is a colorful dual-line theme for the ZSH shell.
+A colorful and minimalist theme for the ZSH shell decorated by a mix of
+icons.
 
-This theme can be setup with a series of terminal emulators, themes and wallpapers. You can use following preview as a source of inspiration and reference to see what it can look like:
+![](images/preview.png)
 
-![](./images/preview.png)
+> **Note**
+>
+> The theme may look different in your setup as its appearance depends of what
+> colors and font you are using for your terminal emulator. Use the preview as
+> just a reference.
+>
+> Theme used for terminal emulator is [Flamerial](https://github.com/skippyr/flamerial).
 
-> In this preview, the Astral theme was used within the [Kitty terminal emulator](https://github.com/kovidgoyal/kitty)
-with the [Rosé Pine theme](https://github.com/kovidgoyal/kitty-themes/blob/master/themes/rose-pine.conf).
-Font used is Source Code Pro Nerd Font. Wallpaper is [City buildings during night time by Zoe](https://unsplash.com/photos/BVoTTLwXvMQ) from Unsplash.
-
-## Features
-
-This theme can show you the following information:
-
-* Your user and hostname.
-* The name of sourced virtual environments.
-* Your current directory path.
-* If inside a Git repository, the name of the branch and if it has changes to
-  be committed.
-
-## Dependencies
-
-This theme has some dependencies that you need to download before installing it.
-
-* git
-
-    This is the terminal utility used to obtain information about your Git
-    repositories.
-
-* A font patched by the Nerd Fonts project.
-
-    This font provides all pretty symbols used in this theme.
+Here is the description of its design:
+-	Your host and user names will appear concatenated with an `@`.
+-	Sourced virtual environments will appear with a Python icon preceded by
+	`using`.
+-	Your current directory will appear preceded by `in`.
+-	If inside a Git repository. The current branch will appear preceded by `on`.
+	If there are changes to be commited an `x` symbol will appear inside
+	parenthesis next to the branch name.
 
 ## Installation
 
-You can install this theme in multiple ways, use the one that suits you best.
+### Dependencies
 
-### Manually
+The following dependencies must be installed to run this software:
 
-* Run the following command to install the theme at
-  `~/.local/share/zsh/themes/astral`.
+| Dependency | Description |
+|-|-|
+| `git` | Required to retrive information about Git repositories. |
+| A [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases)' font | Provides the required pretty symbols. |
 
-    ```bash
-    git clone --depth=1 https://github.com/skippyr/astral ~/.local/share/zsh/themes/astral &&
-    echo "source \"${HOME}/.local/share/zsh/themes/astral/astral.zsh-theme\"" >> ~/.zshrc
-    ```
+### Manual Procedures
 
-* Reopen your terminal emulator.
+Use the following instructions to install this theme manually.
 
-### Within OhMyZSH
+-	Run the following command inside of a terminal emulator to install the theme.
+```bash
+git clone --depth=1 https://github.com/skippyr/astral\
+                    ~/.local/share/zsh/themes/astral &&
+echo "source ~/.local/share/zsh/themes/astral/astral.zsh-theme" >> ~/.zshrc
+```
 
-* Install the theme in OhMyZSH custom themes' directory.
+-	Reopen the terminal emulator to load the theme.
 
-    ```bash
-    git clone --depth=1 https://github.com/skippyr/astral ${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/themes/astral
-    ```
+### Procedures With OhMyZSH
 
-* Change the value of the `ZSH_THEME` variable in your ZSH configuration file,
-  `~/.zshrc`, to use the theme.
+Use the following instructions to install this theme for OhMyZSH.
 
-    ```bash
-    ZSH_THEME="astral/astral"
-    ```
+-	Run the following command inside of a terminal emulator to install the theme.
 
-* Reopen your terminal emulator.
+```bash
+git clone --depth=1 https://github.com/skippyr/astral\
+                    ${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/themes/astral
+```
 
+-	Change the value of the `ZSH_THEME` variable in your ZSH configuration file,
+	`~/.zshrc`, to use the theme:
 
-## Issues And Suggestions
+```bash
+ZSH_THEME=astral/astral
+```
 
-Report issues and suggestions through the [issues tab](https://github.com/skippyr/astral/issues).
+-	Reopen your terminal emulator to load the theme.
 
-## License
+## Support
 
-This project is released under the terms of the MIT license. A copy of the
-license is bundled with the source code.
+Report issues, questions and suggestion through the [issues tab](https://github.com/skippyr/astral/issues).
+
+## Copyright
+
+This software is distributed under the MIT License. A copy of the license is
+bundled with the source code.
 
 Copyright (c) 2023, Sherman Rofeman. MIT license.
