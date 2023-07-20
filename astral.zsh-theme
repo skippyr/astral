@@ -1,7 +1,7 @@
 setopt promptsubst
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-__Astral()
+__astral_t()
 {
 	Get_Virtual_Environment()
 	{
@@ -23,6 +23,6 @@ __Astral()
 	     "in %F{1} %1~%f$(Get_Branch)"
 }
 
-PROMPT='$(__Astral)
+PROMPT='$(__astral_t)
   %F{1}¦%f '
 
