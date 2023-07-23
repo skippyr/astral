@@ -12,9 +12,10 @@ A colorful theme for the ZSH shell.
 > appeareance also depends on your terminal emulator's theme and font. The
 > theme used is [Flamerial](https://github.com/skippyr/flamerial).
 
-### Design
+### Features
 
-About its design:
+These are the features this theme brings on:
+
 -   It shows your user and host names.
 -   It shows the name of sourced virtual environment.
 -   It shows your current directory path abbreviating parent directories by
