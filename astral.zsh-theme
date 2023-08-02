@@ -15,8 +15,8 @@ __Astral()
 
 	Get_Branch()
 	{
-		typeset -r b=$(git branch --show-current 2>/dev/null)
-		[[ ${b} ]] && echo " on %F{5}󰘬 ${b}$(Get_Changes)"
+		typeset -r branch=$(git branch --show-current 2>/dev/null)
+		[[ ${branch} ]] && echo " on %F{5}󰘬 ${branch}$(Get_Changes)"
 	}
 
 	echo\
