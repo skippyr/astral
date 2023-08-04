@@ -4,9 +4,10 @@ A colorful theme for the ZSH shell.
 ![](preview.png)
 
 It shows you:
+-   Your user and host names.
+-   Your current directory.
 -   If inside a Git repository, the branch and if there are changes to be
     commited.
--   Your current directory.
 
 ## Installation
 ### Dependencies
