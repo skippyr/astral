@@ -1,4 +1,4 @@
-# astral
+# Astral
 ## About
 A colorful theme for the ZSH shell.
 ![](preview.png)
