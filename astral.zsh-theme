@@ -19,8 +19,8 @@ __Astral()
         [[ ${branch} ]] && echo " on %F{5}󰘬 ${branch}$(Get_Changes)"
     }
 
-    echo\
-        "%F{2}%F{3}%F{1} %F{3}%n%F{1}@%F{2}%m%f$(Get_Virtual_Environment)"\
+    echo                                                                       \
+        "%F{2}%F{3}%F{1} %F{3}%n%F{1}@%F{2}%m%f$(Get_Virtual_Environment)"  \
         "in %F{1} %1~%f$(Get_Branch)\n  %F{1}¦%f "
 }
 
