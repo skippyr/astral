@@ -1,19 +1,19 @@
 setopt promptsubst
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-__Astral()
+function __Astral()
 {
-    Get_Virtual_Environment()
+    function Get_Virtual_Environment()
     {
         [[ ${VIRTUAL_ENV} ]] && echo " using %F{6} ${VIRTUAL_ENV##*/}%f"
     }
 
-    Get_Changes()
+    function Get_Changes()
     {
         [[ $(git status --porcelain 2>/dev/null) ]] && echo " %f[%F{1}✗%f]"
     }
 
-    Get_Branch()
+    function Get_Branch()
     {
         typeset -r branch=$(git branch --show-current 2>/dev/null)
         [[ ${branch} ]] && echo " on %F{5}󰘬 ${branch}$(Get_Changes)"
